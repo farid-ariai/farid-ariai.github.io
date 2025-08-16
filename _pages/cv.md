@@ -23,6 +23,11 @@ Work experience
 
 * Software Developer  (2015 - 2024)
   * Neyestan Rayaneh, Mashhad, Iran
+ 
+Project
+======
+* [Digital Deliberative Democracy (D3)](https://d3-project.ch) (2024 - Present)
+  * This project explores the use of AI to enhance public deliberation processes. This project will investigate how technology-supported, large-scale crowd computing approaches can be used to strengthen the functions of democratic consultation and popular initiative procedures—arguably the most impactful participatory mechanisms of direct democracy, as they allow the population to not only strongly influence the outcome of the political process but also to set the agenda (in popular initiatives). Hence, this project will build novel hybrid human-machine systems that cultivate, coordinate, and support participants using coordination technology and AI to support these functions in real world democratic settings.
 
 Publications
 ======
