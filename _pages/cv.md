@@ -11,9 +11,9 @@ redirect_from:
 
 Education
 ======
-* PhD in Data Science at [The University of Queensland](https://uq.edu.au/), Australia  2024 - Present
-* Master in Software Engineering at [University of Tehran](https://ut.ac.ir), Iran  2021 - 2023
-* Bachelor in Software Engineering at [Ferdowsi Univeristy of Mashhad](https://um.ac.ir), Iran  2012 - 2017
+* PhD in Data Science at [The University of Queensland](https://uq.edu.au/), Australia  (2024 - Present)
+* Master in Software Engineering at [University of Tehran](https://ut.ac.ir), Iran  (2021 - 2023)
+* Bachelor in Software Engineering at [Ferdowsi Univeristy of Mashhad](https://um.ac.ir), Iran  (2012 - 2017)
 
 Work experience
 ======
