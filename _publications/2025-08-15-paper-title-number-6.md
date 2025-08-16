@@ -6,7 +6,7 @@ permalink: /publication/2025-08-15-paper-title-number-6
 excerpt: 'This paper aim to amplify the efficiency of language models tailored to the Persian language.'
 date: 2024-01-01
 venue: 'Journal of AI and Data Mining'
-# paperurl: 'http://academicpages.github.io/files/paper3.pdf'
+paperurl: 'http://academicpages.github.io/files/ABSA.pdf'
 # citation: 'Your Name, You. (2024). &quot;Paper Title Number 3.&quot; <i>GitHub Journal of Bugs</i>. 1(3).'
 ---
 
