@@ -17,11 +17,11 @@ Education
 
 Work experience
 ======
-* Academic Tutor  2025 - Present
-  * The University of Queensland - School of EECS
+* Academic Tutor  (2025 - Present)
+  * [The University of Queensland - School of EECS](https://eecs.uq.edu.au)
   * Introduction to Programming (CSSE7030)
 
-* Software Developer  2015 - 2024
+* Software Developer  (2015 - 2024)
   * Neyestan Rayaneh, Mashhad, Iran
 
 Publications
