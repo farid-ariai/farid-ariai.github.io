@@ -23,7 +23,11 @@ Work experience
 
 * Software Developer  (2015 - 2024)
   * Neyestan Rayaneh, Mashhad, Iran
- 
+
+Award
+======
+* Awarded No. 1 student ranking in master’s program for academic excellence
+
 Project
 ======
 * [Digital Deliberative Democracy (D3)](https://d3-project.ch) (2024 - Present)
