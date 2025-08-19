@@ -27,6 +27,7 @@ Work experience
 Award
 ======
 * Awarded No. 1 student ranking in master’s program for academic excellence
+  * [University of Tehran](https://ut.ac.ir) (2023)
 
 Project
 ======
