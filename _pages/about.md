@@ -14,8 +14,9 @@ At UQ, I serve as a tutor for [CSSE7030](https://programs-courses.uq.edu.au/cour
 
 Current research activities include:
 
-- Conducting a comprehensive survey of NLP for the legal domain (ongoing)
+- Conducting a comprehensive survey of NLP for the legal domain (completed)
 - Investigating the impact of Named Entity Recognition on legal question answering and classification (ongoing)
 - Examining how AI tools influence the quality of online political deliberation, participation equality, opinion change, and satisfaction with outcomes (ongoing)
+- Investigating Retrieval-Augmented Generation (RAG) systems in the legal domain, with a focus on improving the accuracy, reliability, and explainability of legal information retrieval and question answering (ongoing)
 
 I hold a Master’s degree in Software Engineering from the University of Tehran, Iran, with a focus on big data and machine learning. My thesis research applied the ParsBERT model and PersianNLU dataset to improve model effectiveness in aspect-based sentiment analysis task. I graduated ranked first in my Master’s cohort (12 students) for academic excellence. I earned my Bachelor’s degree in Software Engineering from Ferdowsi University of Mashhad, Iran.
