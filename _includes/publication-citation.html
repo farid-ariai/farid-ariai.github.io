@@ -1,0 +1,5 @@
+{%- assign publication = include.post -%}
+{%- for author in publication.authors -%}
+  {%- unless forloop.first %}, {% if forloop.last %}&amp; {% endif %}{% endunless -%}
+  {%- if author == 'Ariai, F.' -%}<strong>{{ author | escape }}</strong>{%- else -%}{{ author | escape }}{%- endif -%}
+{%- endfor %} ({{ publication.date | date: '%Y' }}). {{ publication.title | escape }}. <em>{{ publication.venue | escape }}</em>{% if publication.volume %}, {{ publication.volume }}{% if publication.issue %}({{ publication.issue }}){% endif %}{% endif %}{% if publication.article %}, Art. {{ publication.article }}{% endif %}{% if publication.pages %}, {{ publication.pages }}{% endif %}.{% if publication.conference %} {{ publication.conference | escape }}.{% endif %}{% if publication.doi %} <a href="https://doi.org/{{ publication.doi }}">doi:{{ publication.doi }}</a>{% endif %}

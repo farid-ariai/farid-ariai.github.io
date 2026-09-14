@@ -2,23 +2,29 @@
 permalink: /
 title: "Farid Ariai"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
-I am a third-year Data Science PhD student at [The University of Queensland](https://www.uq.edu.au/) in the School of Electrical Engineering and Computer Science, supervised by [Professor Gianluca Demartini](https://www.gianlucademartini.net) and [Dr Joel Mackenzie](https://jmmackenzie.io). My research focuses on Natural Language Processing (NLP) with applications in the legal domain, examining how Large Language Models (LLMs) can be effectively utilised in legal contexts to improve their performance and applicability.
 
-I am also part of the [Digital Deliberative Democracy (D3) Project](https://d3-project.ch), funded by the [Swiss National Science Foundation](https://data.snf.ch/grants/grant/205975). The project, Large-Scale Political Participation: Issue Identification, Deliberation, and Co-creation, investigates the use of Artificial Intelligence (AI) to enhance public deliberation processes. It explores how technology-supported, large-scale crowd computing approaches can strengthen democratic consultation and popular initiative procedures—two of the most impactful participatory mechanisms in direct democracy. These procedures allow citizens to both strongly influence political outcomes and set the political agenda. The project aims to design novel hybrid human–machine systems that cultivate, coordinate, and support participants through coordination technologies and AI in real-world democratic settings.
+<p><strong>{{ site.data.research.headline | escape }}</strong></p>
 
-At UQ, I serve as a tutor for [CSSE7030](https://programs-courses.uq.edu.au/course.html?course_code=CSSE7030) – Introduction to Programming.
+I am a PhD candidate in Data Science at [The University of Queensland](https://www.uq.edu.au/), in the School of Electrical Engineering and Computer Science, supervised by [Gianluca Demartini](https://www.gianlucademartini.net) and [Joel Mackenzie](https://jmmackenzie.io). My research focuses on natural language processing in the legal domain and the development and evaluation of large language models (LLMs) for legal tasks.
 
-Current research activities include:
+I investigate legal retrieval-augmented generation, legal-entity supervision and the quality–resource trade-offs of LLM quantisation. Across these projects, I combine controlled experiments with reproducible research software to understand what affects model performance, when apparent improvements hold, and where systems fail. I also co-authored a [survey of Legal NLP published in *ACM Computing Surveys*]({{ '/publication/2025-11-17-paper-title-number-8' | relative_url }}).
 
-- Conducting a comprehensive survey of NLP for the legal domain (completed)
-- Investigating the impact of Named Entity Recognition on legal question answering and classification (ongoing)
-- Examining how AI tools influence the quality of online political deliberation, participation equality, opinion change, and satisfaction with outcomes (ongoing)
-- Investigating Retrieval-Augmented Generation (RAG) systems in the legal domain, with a focus on improving the accuracy, reliability, and explainability of legal information retrieval and question answering (ongoing)
-- Investigating the impact of quantisation on the effectiveness of LLMs in legal tasks, quantifying accuracy–efficiency trade-offs for privacy-preserving on-premises deployment (ongoing)
-- Studying AI-assisted legal drafting in direct democracy, through a controlled study in which people draft a Swiss consultation-procedure (Vernehmlassung) submission with access to a domain-restricted LLM assistant, examining how the assistant is used and how it affects the drafting process (ongoing)
+Alongside this work, I contribute to the [Digital Deliberative Democracy (D3) project](https://d3-project.ch) and study human–AI interaction in civic participation. My projects include research infrastructure for AI-assisted consultation drafting and analysis of an online-deliberation experiment. I also develop human-in-the-loop evaluation tools for LLM-generated feedback on Python code.
 
-I hold a Master’s degree in Software Engineering from the University of Tehran, Iran, with a focus on big data and machine learning. My thesis research applied the ParsBERT model and PersianNLU dataset to improve model effectiveness in aspect-based sentiment analysis task. I graduated ranked first in my Master’s cohort (12 students) for academic excellence. I earned my Bachelor’s degree in Software Engineering from Ferdowsi University of Mashhad, Iran.
+## Research themes
+
+{% for theme in site.data.research.themes %}
+**{{ theme.title }}.** {{ theme.description }}
+
+{% endfor %}
+[Explore my research projects]({{ '/research/' | relative_url }}) · [Publications]({{ '/publications/' | relative_url }})
+
+## Background and teaching
+
+I tutor Python programming at UQ in [CSSE7030: Introduction to Programming](https://programs-courses.uq.edu.au/course.html?course_code=CSSE7030). I hold a Master of Software Engineering from the University of Tehran, where I ranked first in my cohort, and a Bachelor of Software Engineering from Ferdowsi University of Mashhad. Before my PhD, I worked in software development, and I bring that engineering experience to the research systems I build.
+
+[View my CV]({{ '/cv/' | relative_url }})

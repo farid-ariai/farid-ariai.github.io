@@ -1,0 +1,211 @@
+\documentclass[11pt, a4paper]{article}
+
+% ── Layout
+\usepackage[top=1.4cm, bottom=1.4cm, left=1.7cm, right=1.7cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[activate=false]{microtype}
+\usepackage{parskip}
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{1.5em}
+
+% ── Links
+\usepackage[hidelinks, pdftitle={Farid Ariai — CV}, pdfauthor={Farid Ariai}]{hyperref}
+\usepackage{xcolor}
+\definecolor{linkblue}{HTML}{1A3C5E}
+\hypersetup{colorlinks=true, urlcolor=linkblue, linkcolor=linkblue}
+
+% ── Lists
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=1.3em, itemsep=1pt, parsep=0pt, topsep=2pt, label=\textopenbullet}
+
+% ── Section headings: CAPS + rule (academic-template style)
+\usepackage{titlesec}
+\titleformat{\section}{\normalsize\bfseries}{}{0em}{\MakeUppercase}[\vspace{-3pt}\rule{\linewidth}{0.6pt}]
+\titlespacing{\section}{0pt}{8pt}{4pt}
+
+% ── Tables
+\usepackage{array}
+\usepackage{tabularx}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+
+% ── Footer (name + page number)
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\footskip}{18pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[L]{\footnotesize\color{gray}Farid Ariai}
+\fancyfoot[R]{\footnotesize\color{gray}Page \thepage\ of \pageref{LastPage}}
+
+% ── Role entry: "Title | Organisation .......... dates"
+\newcommand{\role}[3]{%
+  \begin{tabularx}{\linewidth}{@{}L r@{}}
+    \textbf{#1} & {\small #3}\\
+    \multicolumn{2}{@{}L}{\small\textit{#2}}
+  \end{tabularx}%
+  \vspace{1pt}%
+}
+
+% Bold author name in publications
+\newcommand{\me}{\textbf{Ariai, F.}}
+
+\begin{document}
+
+%% ── HEADER
+\begin{minipage}[t]{0.60\textwidth}
+  \vspace{0pt}
+  {\LARGE\bfseries Farid Ariai}\\[3pt]
+  {\small PhD Candidate in Data Science}\\
+  {\small Brisbane, QLD, Australia}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.38\textwidth}
+  \vspace{0pt}
+  \raggedleft\footnotesize
+  +61 466 770 657\\
+  \href{mailto:f.ariai@uq.edu.au}{f.ariai@uq.edu.au}\\
+  \href{https://farid-ariai.github.io}{farid-ariai.github.io}\\
+  \href{https://www.linkedin.com/in/farid-ariai-2b4965123}{linkedin.com/in/farid-ariai}\\
+  \href{https://github.com/farid-ariai}{github.com/farid-ariai}\\
+  \href{https://scholar.google.com.au/citations?user=9MioSOUAAAAJ}{Google Scholar}
+\end{minipage}
+
+\vspace{6pt}
+
+%% Profile
+\section{Profile}
+% BEGIN GENERATED PROFILE
+PhD candidate in Data Science at The University of Queensland, specialising in Legal NLP, LLM evaluation and efficient inference. Research spans legal retrieval-augmented generation, parameter-efficient fine-tuning, quantisation and human--AI interaction. Combines controlled experimentation with research software development, GPU/HPC workflows and human-in-the-loop evaluation.
+% END GENERATED PROFILE
+
+%% Education
+\section{Education}
+\role{PhD in Data Science}{The University of Queensland}{2024 -- Present}
+Supervisors: Gianluca Demartini and Joel Mackenzie, School of Electrical Engineering and Computer Science.
+
+\role{Master of Software Engineering}{University of Tehran}{2021 -- 2023}
+Ranked first in cohort.
+
+\role{Bachelor of Software Engineering}{Ferdowsi University of Mashhad}{2012 -- 2017}
+
+%% Research experience
+\section{Research Experience}
+\role{PhD Researcher --- Legal NLP and LLM Evaluation}{The University of Queensland, Brisbane, Australia}{April 2024 -- Present}
+\begin{itemize}
+  \item Conduct research on legal retrieval, parameter-efficient model adaptation and post-training quantisation, with an emphasis on controlled evaluation and reproducible experiments.
+  \item Develop research software spanning dataset preparation, model training and inference, statistical evaluation and GPU/HPC execution.
+  \item Co-authored a survey of Legal NLP published in \textit{ACM Computing Surveys}.
+\end{itemize}
+
+\vspace{4pt}
+\role{Research Collaborator --- Digital Deliberative Democracy (D3)}{The University of Queensland / University of Zurich}{April 2024 -- Present}
+\begin{itemize}
+  \item Contribute to research on NLP and human--AI interaction in civic participation through the D3 project, supported by SNSF Grant 205975.
+\end{itemize}
+
+%% Selected research projects
+\section{Selected Research Projects}
+% BEGIN GENERATED PROJECTS
+\begin{minipage}{\linewidth}
+\textbf{Legal RAG: Retrieval Cues and Graph Structure}
+\begin{itemize}
+  \item Co-developed a Legal RAG pipeline combining LLM-based information extraction, Neo4j, dense/BM25 retrieval, reranking and controlled tests of retrieval cues versus graph structure.
+  \item Contributed reproducible retrieval and evaluation infrastructure covering a 772,001-passage legal corpus and 4,584 HousingQA questions across 47 jurisdictions.
+\end{itemize}
+\end{minipage}\par\vspace{6pt}
+
+\begin{minipage}{\linewidth}
+\textbf{MJL-NER: Legal Entity Supervision in LLMs}
+\begin{itemize}
+  \item Co-developed controlled experiments on legal-entity supervision using QLoRA fine-tuning, vLLM inference, token-matched training and legal-citation counterfactuals.
+  \item Contributed to evaluation across CaseHOLD and MultiEURLEX, including two 7B model families, three seeds and a reconstructed 197-document legal-entity resource.
+\end{itemize}
+\end{minipage}\par\vspace{6pt}
+
+\begin{minipage}{\linewidth}
+\textbf{Quantisation Limits of LLMs for Legal NLP}
+\begin{itemize}
+  \item Built a configurable evaluation framework for six open LLM configurations from 7B to 72B parameters, comparing post-training quantisation from FP8 to sub-2-bit variants.
+  \item Executed and analysed 159 full-test result cells across LEDGAR, CaseHOLD and EURLEX, with paired statistical testing, structured-output audits, checkpoint-footprint measurement and backend controls.
+\end{itemize}
+\end{minipage}\par\vspace{6pt}
+
+\begin{minipage}{\linewidth}
+\textbf{LLM-Assisted Swiss Consultation Drafting}
+\begin{itemize}
+  \item Developed an LLM-assisted consultation-drafting backend with FastAPI, PostgreSQL and SSE streaming, including participant-linked transcripts and usage telemetry.
+  \item Engineered transactional study-budget controls and recovery-aware multi-VM accounting, alongside representative multi-turn cost benchmarks and streaming load tests.
+\end{itemize}
+\end{minipage}\par\vspace{6pt}
+
+\begin{minipage}{\linewidth}
+\textbf{AI-Guided Online Deliberation}
+\begin{itemize}
+  \item Built a reproducible analysis pipeline for a four-arm randomised online-deliberation experiment covering 336 participants, 8,118 comments and 411,515 cleaned behavioural events.
+  \item Implemented argument-tree compliance analysis, pre-registered statistical testing and LLM-based discourse annotation with blinded human validation and H100/Slurm inference.
+\end{itemize}
+\end{minipage}\par\vspace{6pt}
+
+\begin{minipage}{\linewidth}
+\textbf{LLM Code-Style Assessment and Human Evaluation}
+\begin{itemize}
+  \item Developed a Python code-style assessment pipeline integrating assignment context, Pylint and schema-validated feedback across OpenAI, Anthropic and local vLLM workflows.
+  \item Built a shared 26-criterion human--AI annotation framework with source-integrity checks, reviewer adjudication and exact/overlap-aware evaluation of line-level findings.
+\end{itemize}
+\end{minipage}\par\vspace{6pt}
+% END GENERATED PROJECTS
+
+%% Publications
+\section{Publications}
+% BEGIN GENERATED PUBLICATIONS
+\textit{\small Journal articles}
+\begin{enumerate}[leftmargin=1.5em, itemsep=4pt, topsep=2pt, start=1]
+  \item \me{}, Mackenzie, J., \& Demartini, G. (2025). Natural Language Processing for the Legal Domain: A Survey of Tasks, Datasets, Models, and Challenges. \textit{ACM Computing Surveys}, 58(6), Art.~163, 1--37. \href{https://doi.org/10.1145/3777009}{doi:10.1145/3777009}
+  \item \me{}, Tayefeh Mahmoudi, M., \& Moeini, A. (2024). Enhancing Aspect-Based Sentiment Analysis with ParsBERT in Persian Language. \textit{Journal of AI \& Data Mining}, 12(1), 1--14. \href{https://doi.org/10.22044/jadm.2023.13666.2482}{doi:10.22044/jadm.2023.13666.2482}
+  \item Aryai, V., Kharazi, M., \& \me{} (2017). ``Nearest Zero-point'' Algorithm for Cooperative Robotic Search Missions. \textit{IAES International Journal of Robotics \& Automation}, 6(1), 49--58. \href{https://doi.org/10.11591/ijra.v6i1.pp49-58}{doi:10.11591/ijra.v6i1.pp49-58}
+\end{enumerate}
+
+\textit{\small Conference proceedings}
+\begin{enumerate}[leftmargin=1.5em, itemsep=4pt, topsep=2pt, start=4]
+  \item Aryai, V., Mahmoodian, M., Vahidi Ferdowsi, N., \& \me{} (2018). Structural Reliability Analysis of Corroding Steel Bridges Using Random-Field Representation. \textit{Maintenance, Safety, Risk, Management and Life Cycle Performance of Bridges}. 9th International Conference on Bridge Maintenance, Safety \& Management (IABMAS 2018), Melbourne.
+\end{enumerate}
+% END GENERATED PUBLICATIONS
+
+%% Teaching experience
+\clearpage
+\section{Teaching Experience}
+\role{Tutor --- CSSE7030: Introduction to Programming}{The University of Queensland, Brisbane}{July 2025 -- Present}
+\begin{itemize}
+  \item Tutor postgraduate students in Python programming, algorithmic thinking and software design.
+\end{itemize}
+
+%% Industry experience
+\section{Industry Experience}
+\role{Software Developer}{Neyestan Rayaneh, Mashhad, Iran}{September 2015 -- January 2024}
+\begin{itemize}
+  \item Designed and maintained enterprise software systems.
+  \item Managed the full software-development lifecycle: requirements, implementation, testing and deployment.
+\end{itemize}
+
+%% Technical skills
+\section{Technical Skills}
+% BEGIN GENERATED SKILLS
+\begin{itemize}
+  \item \textbf{Programming:} Python, SQL, Bash, JavaScript, C++
+  \item \textbf{LLM adaptation and inference:} PyTorch, Hugging Face Transformers, PEFT/LoRA, QLoRA, vLLM, llama.cpp
+  \item \textbf{Retrieval and evaluation:} Dense retrieval, BM25, reranking, Neo4j/Cypher; FP8, AWQ and GGUF evaluation; structured-output and checkpoint-footprint analysis
+  \item \textbf{Applications and data systems:} FastAPI, PostgreSQL, SQLite, SSE streaming, OpenAI and Anthropic API integration
+  \item \textbf{Experimental methods:} Controlled comparisons, counterfactual evaluation, paired bootstrap intervals, multiple-testing correction, human annotation and agreement analysis
+  \item \textbf{Research infrastructure:} Slurm, GPU/HPC workflows, tensor parallelism, Docker, resumable experiments and automated testing
+  \item \textbf{Languages:} Persian (native); English (professional / academic proficiency)
+\end{itemize}
+% END GENERATED SKILLS
+
+%% Academic referees
+\section{Academic Referees}
+Professor Gianluca Demartini --- Principal Supervisor, School of EECS, UQ.\\
+Dr Joel Mackenzie --- Associate Supervisor, School of EECS, UQ.
+
+\end{document}

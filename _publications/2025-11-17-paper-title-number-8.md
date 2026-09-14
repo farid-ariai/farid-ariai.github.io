@@ -1,12 +1,18 @@
 ---
 title: "Natural Language Processing for the Legal Domain: A Survey of Tasks, Datasets, Models, and Challenges"
-collection: publications
-category: manuscripts
-permalink: /publication/2025-11-17-paper-title-number-8
-excerpt: 'This survey explores foundational concepts related to Natural Language Processing (NLP) in the legal domain, illustrating the unique aspects and challenges of processing legal texts, such as extensive document lengths, complex language, and limited open legal datasets. We provide an overview of NLP tasks specific to legal text, such as Document Summarisation, Named Entity Recognition, Question Answering, Argument Mining, Text Classification, and Judgement Prediction. Furthermore, we analyse both developed legal-oriented language models, and approaches for adapting general-purpose language models to the legal domain. Additionally, we identify sixteen open research challenges, including the detection and mitigation of bias in artificial intelligence applications, the need for more robust and interpretable models, and improving explainability to handle the complexities of legal language and reasoning.'
-date: 2025-11-14
-venue: 'ACM Computing Surveys, Volume 58, Issue 6'
-paperurl: https://dl.acm.org/doi/pdf/10.1145/3777009
+collection: "publications"
+category: "manuscripts"
+permalink: "/publication/2025-11-17-paper-title-number-8"
+date: "2025-11-14"
+authors: ["Ariai, F.", "Mackenzie, J.", "Demartini, G."]
+venue: "ACM Computing Surveys"
+volume: "58"
+issue: "6"
+article: "163"
+pages: "1–37"
+doi: "10.1145/3777009"
+paperurl: "https://dl.acm.org/doi/pdf/10.1145/3777009"
+excerpt: "A survey of Legal NLP tasks, datasets and models, including domain adaptation and challenges in evaluation, bias and explainability."
 ---
 
-Natural Language Processing (NLP) is revolutionising the way both professionals and laypersons operate in the legal field. The considerable potential for NLP in the legal sector, especially in developing computational assistance tools for various legal processes, has captured the interest of researchers for years. This survey follows the Preferred Reporting Items for Systematic Reviews and Meta-Analyses framework, reviewing 154 studies, with a final selection of 131 after manual filtering. It explores foundational concepts related to NLP in the legal domain, illustrating the unique aspects and challenges of processing legal texts, such as extensive document lengths, complex language, and limited open legal datasets. We provide an overview of NLP tasks specific to legal text, such as Document Summarisation, Named Entity Recognition, Question Answering, Argument Mining, Text Classification, and Judgement Prediction. Furthermore, we analyse both developed legal-oriented language models, and approaches for adapting general-purpose language models to the legal domain. Additionally, we identify sixteen open research challenges, including the detection and mitigation of bias in artificial intelligence applications, the need for more robust and interpretable models, and improving explainability to handle the complexities of legal language and reasoning.
+This survey examines NLP tasks in the legal domain, including summarisation, named entity recognition, question answering, argument mining, text classification and judgement prediction. It reviews legal language models and approaches to adapting general-purpose models, and discusses challenges posed by long documents, specialised language, limited open data, bias and explainability.

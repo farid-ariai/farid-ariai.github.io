@@ -1,13 +1,17 @@
 ---
-title: "Enhancing Aspect based Sentiment Analysis with ParsBERT in Persian Language"
-collection: publications
-category: manuscripts
-permalink: /publication/2025-08-15-paper-title-number-6
-excerpt: 'This paper aim to amplify the efficiency of language models tailored to the Persian language.'
-date: 2024-01-01
-venue: 'Journal of AI and Data Mining'
-paperurl: https://arxiv.org/pdf/2502.01091v1
-# citation: 'Your Name, You. (2024). &quot;Paper Title Number 3.&quot; <i>GitHub Journal of Bugs</i>. 1(3).'
+title: "Enhancing Aspect-Based Sentiment Analysis with ParsBERT in Persian Language"
+collection: "publications"
+category: "manuscripts"
+permalink: "/publication/2025-08-15-paper-title-number-6"
+date: "2024-01-01"
+authors: ["Ariai, F.", "Tayefeh Mahmoudi, M.", "Moeini, A."]
+venue: "Journal of AI & Data Mining"
+volume: "12"
+issue: "1"
+pages: "1–14"
+doi: "10.22044/jadm.2023.13666.2482"
+paperurl: "https://arxiv.org/pdf/2502.01091v1"
+excerpt: "Aspect-based sentiment analysis of Persian product reviews using ParsBERT and a supporting sentiment lexicon."
 ---
 
-In the era of pervasive internet use and the dominance of social networks, researchers face significant challenges in Persian text mining including the scarcity of adequate datasets in Persian and the inefficiency of existing language models. This paper specifically tackles these challenges, aiming to amplify the efficiency of language models tailored to the Persian language. Focusing on enhancing the effectiveness of sentiment analysis, our approach employs an aspect-based methodology utilizing the ParsBERT model, augmented with a relevant lexicon. The study centers on sentiment analysis of user opinions extracted from the Persian website Digikala. The experimental results not only highlight the proposed methods superior semantic capabilities but also showcase its efficiency gains with an accuracy of 88.2 and an F1 score of 61.7. The importance of enhancing language models in this context lies in their pivotal role in extracting nuanced sentiments from user-generated content, ultimately advancing the field of sentiment analysis in Persian text mining by increasing efficiency and accuracy.
+This study investigates aspect-based sentiment analysis of Persian product reviews from Digikala. It combines ParsBERT with a supporting lexicon and evaluates the approach in a setting with limited Persian-language resources. The work examines how model and lexical information can support the identification of sentiments expressed about particular product aspects.

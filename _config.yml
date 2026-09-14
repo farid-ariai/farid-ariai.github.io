@@ -7,12 +7,12 @@
 # server process.
 
 # Basic Site Settings
-locale                   : "en-US"
+locale                   : "en-AU"
 title                    : "Farid's Homepage"
 site_theme               : "default"
 title_separator          : "-"
 name                     : &name "Farid Ariai"
-description              : &description "PhD Candidate at The University of Queensland"
+description              : &description "Farid Ariai — PhD Candidate in Data Science at The University of Queensland, specialising in Legal NLP and LLM evaluation."
 url                      : https://farid-ariai.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "farid-ariai/farid-ariai.github.io"
@@ -25,9 +25,9 @@ author:
   avatar           : "prof_pic.jpg"
   name             : "Farid Ariai"
   pronouns         : # example: "she/her"  
-  bio              : "PhD Candidate in Data Science at The University of Queensland"
-  location         : "Brisbane, Australia"
-  employer         : "University of Queensland"
+  bio              : "PhD Candidate in Data Science | Legal NLP and LLM Evaluation"
+  location         : "Brisbane, QLD, Australia"
+  employer         : "The University of Queensland"
   uri              : # URL
   email            : "f.ariai@uq.edu.au" 
 
@@ -175,6 +175,7 @@ exclude:
   - CHANGELOG
   - Capfile
   - config
+  - cv.tex
   - Dockerfile
   - Gemfile
   - Gruntfile.js
@@ -186,6 +187,7 @@ exclude:
   - package.json*
   - Rakefile
   - README
+  - scripts
   - tmp
   - vendor
 keep_files:

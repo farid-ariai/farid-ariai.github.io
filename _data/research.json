@@ -1,0 +1,106 @@
+{
+  "headline": "PhD Candidate in Data Science | Legal NLP and LLM Evaluation",
+  "profile": "PhD candidate in Data Science at The University of Queensland, specialising in Legal NLP, LLM evaluation and efficient inference. Research spans legal retrieval-augmented generation, parameter-efficient fine-tuning, quantisation and human–AI interaction. Combines controlled experimentation with research software development, GPU/HPC workflows and human-in-the-loop evaluation.",
+  "themes": [
+    {
+      "title": "Legal NLP and retrieval",
+      "description": "Studying how legal information is represented, retrieved and used by language models, including legal RAG, entity supervision and domain adaptation."
+    },
+    {
+      "title": "Efficient and reliable LLMs",
+      "description": "Evaluating quantisation, inference and output reliability through controlled experiments, statistical analysis and deployment-relevant resource measurements."
+    },
+    {
+      "title": "Human–AI interaction",
+      "description": "Building and evaluating systems for AI-assisted civic participation and educational feedback, with human annotation and behavioural evidence informing the evaluation."
+    }
+  ],
+  "projects": [
+    {
+      "id": "legal-rag",
+      "title": "Legal RAG: Retrieval Cues and Graph Structure",
+      "type": "Legal retrieval research and experimental infrastructure",
+      "description": "This project investigates whether the performance of graph-backed legal retrieval is explained by graph structure or by LLM-generated retrieval cues. It combines legal information extraction, Neo4j, dense and lexical retrieval, and controlled evaluation on bar-exam and housing-law questions, with particular attention to dataset provenance and the retriever's actual behaviour.",
+      "cv_bullets": [
+        "Co-developed a Legal RAG pipeline combining LLM-based information extraction, Neo4j, dense/BM25 retrieval, reranking and controlled tests of retrieval cues versus graph structure.",
+        "Contributed reproducible retrieval and evaluation infrastructure covering a 772,001-passage legal corpus and 4,584 HousingQA questions across 47 jurisdictions."
+      ]
+    },
+    {
+      "id": "mjl-ner",
+      "title": "MJL-NER: Legal Entity Supervision in LLMs",
+      "type": "Controlled Legal NLP experiments and model adaptation",
+      "description": "MJL-NER examines whether legal-entity supervision helps language models with legal question answering and document classification. The project combines QLoRA fine-tuning, vLLM inference and controlled evaluation on CaseHOLD and MultiEURLEX. Token-matched training conditions and citation-level counterfactuals test whether apparent effects reflect useful entity supervision, differences in training allocation, or associations that do not translate into model reliance.",
+      "cv_bullets": [
+        "Co-developed controlled experiments on legal-entity supervision using QLoRA fine-tuning, vLLM inference, token-matched training and legal-citation counterfactuals.",
+        "Contributed to evaluation across CaseHOLD and MultiEURLEX, including two 7B model families, three seeds and a reconstructed 197-document legal-entity resource."
+      ]
+    },
+    {
+      "id": "legal-quantisation",
+      "title": "Quantisation Limits of LLMs for Legal NLP",
+      "type": "Efficient inference and empirical LLM evaluation",
+      "description": "This project studies the quality–resource trade-offs of post-training quantisation for legal language tasks. It evaluates six core model configurations from 7B to 72B parameters across LEDGAR, CaseHOLD and EURLEX, from FP8 to sub-2-bit variants. The analysis goes beyond aggregate scores to examine structured-output validity, checkpoint size, task-specific failures and differences between inference backends.",
+      "cv_bullets": [
+        "Built a configurable evaluation framework for six open LLM configurations from 7B to 72B parameters, comparing post-training quantisation from FP8 to sub-2-bit variants.",
+        "Executed and analysed 159 full-test result cells across LEDGAR, CaseHOLD and EURLEX, with paired statistical testing, structured-output audits, checkpoint-footprint measurement and backend controls."
+      ]
+    },
+    {
+      "id": "consultation-drafting",
+      "title": "LLM-Assisted Swiss Consultation Drafting",
+      "type": "Experimental LLM platform and study infrastructure",
+      "description": "This project develops research infrastructure for studying LLM-assisted participation in Swiss public consultations. The platform supports streamed, multi-turn conversations, participant-linked transcripts and detailed usage records. Its engineering includes transactional study-budget controls, recovery-aware multi-VM accounting, and representative cost and load testing, supporting a planned study of how AI assistance affects drafting and participant experience.",
+      "cv_bullets": [
+        "Developed an LLM-assisted consultation-drafting backend with FastAPI, PostgreSQL and SSE streaming, including participant-linked transcripts and usage telemetry.",
+        "Engineered transactional study-budget controls and recovery-aware multi-VM accounting, alongside representative multi-turn cost benchmarks and streaming load tests."
+      ]
+    },
+    {
+      "id": "online-deliberation",
+      "title": "AI-Guided Online Deliberation",
+      "type": "Experimental analytics, NLP measurement and computational social science",
+      "description": "This project analyses how AI-selected argument nudges affect online political deliberation. Using a four-arm randomised experiment with 336 participants, the research pipeline combines surveys, 8,118 comments, behavioural logs and structured argument maps. It measures intervention uptake and discussion patterns, and integrates statistical analysis with LLM-based discourse annotation and blinded human validation.",
+      "cv_bullets": [
+        "Built a reproducible analysis pipeline for a four-arm randomised online-deliberation experiment covering 336 participants, 8,118 comments and 411,515 cleaned behavioural events.",
+        "Implemented argument-tree compliance analysis, pre-registered statistical testing and LLM-based discourse annotation with blinded human validation and H100/Slurm inference."
+      ]
+    },
+    {
+      "id": "code-style-assessment",
+      "title": "LLM Code-Style Assessment and Human Evaluation",
+      "type": "Educational AI evaluation and annotation tooling",
+      "description": "This project investigates how LLM-generated feedback on Python code can be evaluated against human judgement. It combines assignment context, Pylint and schema-validated model outputs with a shared 26-criterion rubric. A human annotation application supports independent review and adjudication, while an evaluation engine compares model findings with consensus annotations using exact and overlap-aware line matching.",
+      "cv_bullets": [
+        "Developed a Python code-style assessment pipeline integrating assignment context, Pylint and schema-validated feedback across OpenAI, Anthropic and local vLLM workflows.",
+        "Built a shared 26-criterion human–AI annotation framework with source-integrity checks, reviewer adjudication and exact/overlap-aware evaluation of line-level findings."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "group": "Programming",
+      "items": "Python, SQL, Bash, JavaScript, C++"
+    },
+    {
+      "group": "LLM adaptation and inference",
+      "items": "PyTorch, Hugging Face Transformers, PEFT/LoRA, QLoRA, vLLM, llama.cpp"
+    },
+    {
+      "group": "Retrieval and evaluation",
+      "items": "Dense retrieval, BM25, reranking, Neo4j/Cypher; FP8, AWQ and GGUF evaluation; structured-output and checkpoint-footprint analysis"
+    },
+    {
+      "group": "Applications and data systems",
+      "items": "FastAPI, PostgreSQL, SQLite, SSE streaming, OpenAI and Anthropic API integration"
+    },
+    {
+      "group": "Experimental methods",
+      "items": "Controlled comparisons, counterfactual evaluation, paired bootstrap intervals, multiple-testing correction, human annotation and agreement analysis"
+    },
+    {
+      "group": "Research infrastructure",
+      "items": "Slurm, GPU/HPC workflows, tensor parallelism, Docker, resumable experiments and automated testing"
+    }
+  ]
+}
