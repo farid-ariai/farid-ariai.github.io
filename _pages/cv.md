@@ -28,7 +28,7 @@ redirect_from:
 
 - Conduct research on legal retrieval, parameter-efficient model adaptation and post-training quantisation, with an emphasis on controlled evaluation and reproducible experiments.
 - Develop research software spanning dataset preparation, model training and inference, statistical evaluation and GPU/HPC execution.
-- Co-authored a survey of Legal NLP published in *ACM Computing Surveys*.
+- Authored a survey of Legal NLP published in *ACM Computing Surveys*.
 
 ### Research Collaborator — Digital Deliberative Democracy (D3)
 
